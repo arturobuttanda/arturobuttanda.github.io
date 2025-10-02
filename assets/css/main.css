@@ -1,0 +1,25 @@
+/* assets/css/main.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Fondo de la página */
+    color: #333; /* Color de texto */
+}
+
+header {
+    background: #007bff; /* Color azul para la cabecera */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #0056b3; /* Un azul más oscuro para los títulos */
+}
+
+#services {
+    padding: 20px;
+    text-align: center;
+}
