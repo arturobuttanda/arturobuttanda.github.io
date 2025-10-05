@@ -23,8 +23,13 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */ /* Desactivado para depuración */
     background: #fff;
+}
+
+/* Estilo de depuración temporal */
+* {
+    outline: 1px solid red !important;
 }
 
 /* Custom Cursor Effect */
