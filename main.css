@@ -1814,6 +1814,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .contact-grid {
+        gap: 2.5rem;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
