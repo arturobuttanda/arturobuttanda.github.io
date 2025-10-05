@@ -9,17 +9,43 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Vector TI</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="programacion.html">Programación</a></li>
-            <li><a href="codificacion.html">Codificación</a></li>
-            <li><a href="procesamiento.html">Procesamiento</a></li>
-            <li><a href="contacto.html" class="active">Contacto</a></li>
-        </ul>
-    </nav>
-
+    <div class="logo">
+        <span class="logo-vector">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="vectorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path class="arrow" d="M 20 50 L 60 50 L 50 30 M 60 50 L 50 70" 
+                      stroke="url(#vectorGradient)" 
+                      stroke-width="6" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      fill="none"/>
+                <circle cx="75" cy="50" r="8" fill="url(#vectorGradient)"/>
+            </svg>
+        </span>
+        <span class="logo-text">Vector TI</span>
+    </div>
+    
+    <!-- Botón hamburguesa -->
+    <button class="mobile-menu-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="programacion.html">Programación</a></li>
+        <li><a href="codificacion.html">Codificación</a></li>
+        <li><a href="procesamiento.html">Procesamiento</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
     <section class="page-header">
         <div class="container">
             <h1>Contáctanos</h1>

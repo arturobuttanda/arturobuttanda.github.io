@@ -429,3 +429,42 @@ images.forEach(img => imageObserver.observe(img));
 
 console.log('%c🚀 Vector TI Premium Edition', 'color: #ff6b35; font-size: 20px; font-weight: bold;');
 console.log('%cDesarrollado con ❤️ para la mejor experiencia', 'color: #666; font-size: 12px;');
+
+// ========================================
+// MENÚ HAMBURGUESA MOBILE
+// ========================================
+
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        
+        // Prevenir scroll cuando el menú está abierto
+        if (navLinks.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Cerrar menú al hacer click en un link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+    
+    // Cerrar menú al hacer click fuera
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.navbar')) {
+            mobileMenuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
