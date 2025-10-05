@@ -1937,9 +1937,9 @@ footer {
     }
 }
 
-/* ===== DEBUGGING STYLES ===== */
-.page-header { background-color: rgba(255, 0, 0, 0.2) !important; } /* Red */
+/* ===== DEBUGGING STYLES v2 ===== */
 .contact-section { background-color: rgba(0, 255, 0, 0.2) !important; } /* Green */
-.faq-section { background-color: rgba(0, 0, 255, 0.2) !important; } /* Blue */
-footer { background-color: rgba(255, 255, 0, 0.2) !important; } /* Yellow */
-/* ===== END DEBUGGING STYLES ===== */
+.contact-grid { background-color: rgba(255, 165, 0, 0.3) !important; } /* Orange */
+.contact-form-container { background-color: rgba(128, 0, 128, 0.3) !important; } /* Purple */
+.contact-info { background-color: rgba(255, 192, 203, 0.3) !important; } /* Pink */
+/* ===== END DEBUGGING STYLES v2 ===== */
