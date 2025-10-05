@@ -23,7 +23,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    /* overflow-x: hidden; */ /* Desactivado para depuración */
+    overflow-x: hidden;
     background: #fff;
 }
 
@@ -1343,11 +1343,9 @@ footer {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 4rem;
     margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact-form-container {
@@ -1801,10 +1799,6 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .service-detail-card {
         flex-direction: column;
         text-align: center;
@@ -1939,9 +1933,4 @@ footer {
     }
 }
 
-/* ===== DEBUGGING STYLES v2 ===== */
-.contact-section { background-color: rgba(0, 255, 0, 0.2) !important; } /* Green */
-.contact-grid { background-color: rgba(255, 165, 0, 0.3) !important; } /* Orange */
-.contact-form-container { background-color: rgba(128, 0, 128, 0.3) !important; } /* Purple */
-.contact-info { background-color: rgba(255, 192, 203, 0.3) !important; } /* Pink */
-/* ===== END DEBUGGING STYLES v2 ===== */
+
