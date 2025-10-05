@@ -228,38 +228,13 @@ sections.forEach(section => {
 // VECTOR LOGO ANIMATION
 // ========================================
 
-function createVectorLogo() {
-    const logos = document.querySelectorAll('.logo');
-    logos.forEach(logo => {
-        if (logo && !logo.querySelector('.logo-vector')) {
-            const vectorSVG = `
-                <span class="logo-vector">
-                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="vectorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <path class="arrow" d="M 20 50 L 60 50 L 50 30 M 60 50 L 50 70" 
-                              stroke="url(#vectorGradient)" 
-                              stroke-width="6" 
-                              stroke-linecap="round" 
-                              stroke-linejoin="round" 
-                              fill="none"/>
-                        <circle cx="75" cy="50" r="8" fill="url(#vectorGradient)"/>
-                    </svg>
-                </span>
-            `;
-            
-            const logoText = logo.textContent.trim();
-            logo.innerHTML = vectorSVG + '<span class="logo-text">' + logoText + '</span>';
-        }
-    });
-}
-
-// Initialize logo on page load
-createVectorLogo();
+// El logo ya está en el HTML, así que solo verificamos que exista
+document.addEventListener('DOMContentLoaded', function() {
+    const logoArrow = document.querySelector('.logo-vector .arrow');
+    if (logoArrow) {
+        console.log('✓ Logo Vector cargado correctamente');
+    }
+});
 
 // ========================================
 // FORM VALIDATION AND ANIMATION
